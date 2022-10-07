@@ -554,6 +554,26 @@ optional = false
 python-versions = "*"
 
 [[package]]
+name = "mlxtend"
+version = "0.21.0"
+description = "Machine Learning Library Extensions"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+joblib = ">=0.13.2"
+matplotlib = ">=3.0.0"
+numpy = ">=1.16.2"
+pandas = ">=0.24.2"
+scikit-learn = ">=1.0.2"
+scipy = ">=1.2.1"
+
+[package.extras]
+docs = ["mkdocs"]
+testing = ["pytest"]
+
+[[package]]
 name = "more-itertools"
 version = "8.14.0"
 description = "More routines for operating on iterables, beyond itertools"
@@ -1229,7 +1249,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = "3.8"
-content-hash = "e28858b9d6245dea287c1fb5c9a6ccdb56c9a2822e3809c934417e6dca03d7a6"
+content-hash = "3c6a2083e4b440c77e8dd832000f015275d857e1c11098f9cc25e44c9e7b2b8a"
 
 [metadata.files]
 appnope = [
@@ -1383,6 +1403,7 @@ markupsafe = [
 matplotlib = []
 matplotlib-inline = []
 mistune = []
+mlxtend = []
 more-itertools = []
 nbclient = []
 nbconvert = []
